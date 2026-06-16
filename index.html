@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chronicles of Aethoria — Join the Journey</title>
+  <meta name="description"
+    content="Chronicles of Aethoria is an ambitious story-driven action-RPG. We're looking for passionate people to join our small indie team. Apply now.">
+
+  <!-- Security -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Chronicles of Aethoria — Join the Journey">
+  <meta property="og:description" content="An ambitious story-driven action-RPG seeking passionate developers, artists, and creators. No perfect résumés needed — just passion.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/0a0a10/c8a84a?text=Chronicles+of+Aethoria">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chronicles of Aethoria — Join the Journey">
+  <meta name="twitter:description" content="We're building an action-RPG where every choice echoes. Join our indie team.">
+
+  <!-- Theme -->
+  <meta name="theme-color" content="#06060a">
+
+  <!-- Favicon (inline SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Cinzel+Decorative:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Fallback for no-JS -->
+  <noscript>
+    <div style="background:#0a0a10;color:#c8a84a;text-align:center;padding:60px 20px;font-family:serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+      <h1 style="font-size:32px;margin-bottom:16px;">Chronicles of Aethoria</h1>
+      <p style="color:#9a9aaa;max-width:500px;margin-bottom:24px;">This site uses JavaScript for the 3D experience. To apply to our team, email us directly:</p>
+      <a href="mailto:tipsycoder.23.08.06@gmail.com?subject=Aethoria%20Team%20Application" style="color:#c8a84a;font-size:18px;border:1px solid #c8a84a;padding:12px 24px;text-decoration:none;">tipsycoder.23.08.06@gmail.com</a>
+    </div>
+  </noscript>
+
+  <!-- Noise overlay -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="nav-sigil">✦</span>
+      <span class="nav-title">AETHORIA</span>
+    </div>
+    <div class="nav-links">
+      <a href="#about" class="nav-link">The Vision</a>
+      <a href="#roles" class="nav-link">Roles</a>
+      <a href="#philosophy" class="nav-link">Philosophy</a>
+      <a href="#apply" class="nav-link nav-link--cta">Apply Now</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">The Vision</a>
+    <a href="#roles" class="mobile-link">Roles</a>
+    <a href="#philosophy" class="mobile-link">Philosophy</a>
+    <a href="#apply" class="mobile-link">Apply Now</a>
+  </div>
+
+  <!-- Hero Section with Three.js Canvas -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-eyebrow">AN INDIE RPG SEEKING ITS TEAM</div>
+      <h1 class="hero-title">
+        <span class="hero-title-line">Chronicles of</span>
+        <span class="hero-title-line hero-title-accent">Aethoria</span>
+      </h1>
+      <div class="hero-rule"></div>
+      <p class="hero-subtitle">We're building something extraordinary — a story-driven action-RPG where every choice
+        echoes. We don't need perfect resumes. We need people who burn to create.</p>
+      <div class="hero-actions">
+        <a href="#apply" class="btn btn-primary">
+          <span class="btn-text">Join the Journey</span>
+          <span class="btn-glow"></span>
+        </a>
+        <a href="#about" class="btn btn-ghost">Learn More</a>
+      </div>
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">The Vision</div>
+        <h2 class="section-title">A World That<br><span class="accent">Remembers</span></h2>
+        <div class="section-bar"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">Chronicles of Aethoria is a single-player, story-driven action-RPG set in a continent of
+            five kingdoms, each built on a distinct magical tradition — and all on the brink of war.</p>
+          <p>You play as Kaelith, marked by a sigil that connects to all five sources of magic in a world where that
+            shouldn't be possible. The game follows the philosophy: <em>"Read → React → Adapt → Master"</em> — in
+            combat, in exploration, and in every relationship you build.</p>
+          <p>This isn't a game about saving the world from a villain. It's a game about understanding why the villain
+            might be right about the problem — and wrong about the solution.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-value">80+</div>
+            <div class="stat-label">Hours of Story</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">5</div>
+            <div class="stat-label">Kingdoms</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">4</div>
+            <div class="stat-label">Unique Endings</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">∞</div>
+            <div class="stat-label">Passion Required</div>
+          </div>
+        </div>
+      </div>
+      <!-- Feature cards -->
+      <div class="features-grid">
+        <div class="feature-card" data-color="var(--cyan)">
+          <div class="feature-icon">❄</div>
+          <h3 class="feature-title">Stance-Based Combat</h3>
+          <p>Every enemy telegraphs their intent. Every fight is a conversation of reads and reactions — not button
+            mashing.</p>
+        </div>
+        <div class="feature-card" data-color="var(--green)">
+          <div class="feature-icon">🌿</div>
+          <h3 class="feature-title">Living Exploration</h3>
+          <p>No map markers. No quest arrows. The sigil on your wrist guides you. Pay attention and the world opens up.
+          </p>
+        </div>
+        <div class="feature-card" data-color="var(--amber)">
+          <div class="feature-icon">🔥</div>
+          <h3 class="feature-title">Consequences That Echo</h3>
+          <p>136 consequence flags track every choice. Your ending isn't determined by the final decision — it's
+            determined by everything.</p>
+        </div>
+        <div class="feature-card" data-color="var(--violet)">
+          <div class="feature-icon">✦</div>
+          <h3 class="feature-title">Five Magic Traditions</h3>
+          <p>Each kingdom's magic works differently — memory, nature, probability, fire, and resonance. Learn them all.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="section philosophy" id="philosophy">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Our Philosophy</div>
+        <h2 class="section-title">We Don't Need<br><span class="accent">Perfect Résumés</span></h2>
+        <div class="section-bar"></div>
+      </div>
+      <div class="philosophy-content">
+        <blockquote class="philosophy-quote">
+          "We'd rather work with someone who has never shipped a game but stays up at night thinking about how to make
+          one — than someone with ten shipped titles who treats this as just another job."
+        </blockquote>
+        <div class="philosophy-grid">
+          <div class="phil-card">
+            <div class="phil-icon">🔥</div>
+            <h3>Enthusiasm Over Experience</h3>
+            <p>If you're excited about game development and willing to learn, that matters more to us than years on a
+              resume. Skills can be taught. Passion can't.</p>
+          </div>
+          <div class="phil-card">
+            <div class="phil-icon">🤝</div>
+            <h3>Small Team, Big Impact</h3>
+            <p>2–4 people, each with real ownership over their domain. No corporate hierarchy. No ticket systems. Just
+              people making something they believe in.</p>
+          </div>
+          <div class="phil-card">
+            <div class="phil-icon">🌱</div>
+            <h3>Learn As We Build</h3>
+            <p>Nobody on this team knows everything. We figure things out together, share what we learn, and get better
+              with every iteration.</p>
+          </div>
+          <div class="phil-card">
+            <div class="phil-icon">💎</div>
+            <h3>Quality Over Speed</h3>
+            <p>We'd rather build one incredible dungeon than ten mediocre ones. Every system, every line of dialogue,
+              every texture — it has to matter.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roles Section -->
+  <section class="section roles" id="roles">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Open Roles</div>
+        <h2 class="section-title">Where Could You<br><span class="accent">Make Your Mark?</span></h2>
+        <div class="section-bar"></div>
+        <p class="section-desc">These are areas where we need help — but don't limit yourself to these. If you bring
+          something we haven't thought of, tell us.</p>
+      </div>
+      <div class="roles-grid">
+        <div class="role-card">
+          <div class="role-header">
+            <span class="role-icon">⚙</span>
+            <span class="role-tag">CORE</span>
+          </div>
+          <h3 class="role-title">Unity C# Developer</h3>
+          <p class="role-desc">Combat systems, AI behaviour trees, magic school architecture, save systems. You'll be
+            writing the code that makes Aethoria breathe.</p>
+          <div class="role-skills">
+            <span class="skill-tag">C#</span>
+            <span class="skill-tag">Unity</span>
+            <span class="skill-tag">Game Systems</span>
+          </div>
+        </div>
+        <div class="role-card">
+          <div class="role-header">
+            <span class="role-icon">🎨</span>
+            <span class="role-tag">VISUAL</span>
+          </div>
+          <h3 class="role-title">3D Environment Artist</h3>
+          <p class="role-desc">Five kingdoms, each with distinct architecture and atmosphere. From ice-crystal towers to
+            living forests to tidal cities. Blender + Unity HDRP.</p>
+          <div class="role-skills">
+            <span class="skill-tag">Blender</span>
+            <span class="skill-tag">HDRP</span>
+            <span class="skill-tag">Texturing</span>
+          </div>
+        </div>
+        <div class="role-card">
+          <div class="role-header">
+            <span class="role-icon">🎵</span>
+            <span class="role-tag">AUDIO</span>
+          </div>
+          <h3 class="role-title">Sound Designer / Composer</h3>
+          <p class="role-desc">A 3-layer dynamic music system where every kingdom has its own harmonic signature. FMOD
+            integration. Audio that tells the story the screen can't.</p>
+          <div class="role-skills">
+            <span class="skill-tag">FMOD</span>
+            <span class="skill-tag">Composition</span>
+            <span class="skill-tag">SFX</span>
+          </div>
+        </div>
+        <div class="role-card">
+          <div class="role-header">
+            <span class="role-icon">✍</span>
+            <span class="role-tag">NARRATIVE</span>
+          </div>
+          <h3 class="role-title">Narrative Designer / Writer</h3>
+          <p class="role-desc">120,000 lines of dialogue. Characters who feel real. A villain who might be right.
+            Branching narratives in Yarn Spinner that make every conversation matter.</p>
+          <div class="role-skills">
+            <span class="skill-tag">Writing</span>
+            <span class="skill-tag">Yarn Spinner</span>
+            <span class="skill-tag">Worldbuilding</span>
+          </div>
+        </div>
+        <div class="role-card">
+          <div class="role-header">
+            <span class="role-icon">🎮</span>
+            <span class="role-tag">DESIGN</span>
+          </div>
+          <h3 class="role-title">Level / Game Designer</h3>
+          <p class="role-desc">22 hand-crafted dungeons. 37 ancient structures. A world that rewards paying attention
+            over following markers. Every space tells a story.</p>
+          <div class="role-skills">
+            <span class="skill-tag">Level Design</span>
+            <span class="skill-tag">ProBuilder</span>
+            <span class="skill-tag">Balancing</span>
+          </div>
+        </div>
+        <div class="role-card role-card--open">
+          <div class="role-header">
+            <span class="role-icon">✦</span>
+            <span class="role-tag">YOU DECIDE</span>
+          </div>
+          <h3 class="role-title">Something We Haven't Listed</h3>
+          <p class="role-desc">UI artist? VFX specialist? Community manager? Concept artist? If you see a gap and you're
+            the person to fill it — tell us what you'd bring.</p>
+          <div class="role-skills">
+            <span class="skill-tag">Your Skills</span>
+            <span class="skill-tag">Your Passion</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="section tech" id="tech">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Tech Stack</div>
+        <h2 class="section-title">What We're<br><span class="accent">Building With</span></h2>
+        <div class="section-bar"></div>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-item"><span class="tech-icon">🎮</span><span class="tech-name">Unity 6 LTS</span><span
+            class="tech-detail">HDRP Pipeline</span></div>
+        <div class="tech-item"><span class="tech-icon">💻</span><span class="tech-name">C#</span><span
+            class="tech-detail">Core Language</span></div>
+        <div class="tech-item"><span class="tech-icon">🎵</span><span class="tech-name">FMOD</span><span
+            class="tech-detail">Dynamic Audio</span></div>
+        <div class="tech-item"><span class="tech-icon">💬</span><span class="tech-name">Yarn Spinner</span><span
+            class="tech-detail">Dialogue System</span></div>
+        <div class="tech-item"><span class="tech-icon">🎨</span><span class="tech-name">Blender</span><span
+            class="tech-detail">3D Pipeline</span></div>
+        <div class="tech-item"><span class="tech-icon">📦</span><span class="tech-name">Git LFS</span><span
+            class="tech-detail">Version Control</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="section apply" id="apply">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-eyebrow">Apply</div>
+        <h2 class="section-title">Ready to<br><span class="accent">Begin?</span></h2>
+        <div class="section-bar"></div>
+        <p class="section-desc">No cover letter. No portfolio requirement. Just tell us who you are and why this project
+          speaks to you. We'll read every word.</p>
+      </div>
+
+      <form class="application-form" id="applicationForm" action="https://formsubmit.co/tipsycoder.23.08.06@gmail.com"
+        method="POST">
+        <!-- FormSubmit config -->
+        <input type="hidden" name="_subject" value="🎮 New Aethoria Team Application!">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_autoresponse" value="Thank you for applying to Chronicles of Aethoria! We've received your application and will review it within a week. — The Aethoria Team">
+        <!-- Honeypot (anti-bot) -->
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-grid">
+          <!-- Personal Info -->
+          <div class="form-group">
+            <label class="form-label" for="name">Your Name <span class="required">*</span></label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="What should we call you?" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="Where can we reach you?"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="discord">Discord Username</label>
+            <input type="text" id="discord" name="discord" class="form-input"
+              placeholder="Optional — but we'll probably use Discord">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="role">Role You're Interested In <span class="required">*</span></label>
+            <select id="role" name="role" class="form-input form-select" required>
+              <option value="" disabled selected>Choose your path...</option>
+              <option value="Unity C# Developer">⚙ Unity C# Developer</option>
+              <option value="3D Environment Artist">🎨 3D Environment Artist</option>
+              <option value="Sound Designer / Composer">🎵 Sound Designer / Composer</option>
+              <option value="Narrative Designer / Writer">✍ Narrative Designer / Writer</option>
+              <option value="Level / Game Designer">🎮 Level / Game Designer</option>
+              <option value="UI/UX Designer">🖥 UI/UX Designer</option>
+              <option value="VFX Artist">✨ VFX Artist</option>
+              <option value="Concept Artist">🖌 Concept Artist</option>
+              <option value="Other">✦ Something Else (tell us below)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="experience">Experience Level <span class="required">*</span></label>
+            <select id="experience" name="experience" class="form-input form-select" required>
+              <option value="" disabled selected>Be honest — we respect it</option>
+              <option value="Complete Beginner">🌱 Complete Beginner — I'm learning everything</option>
+              <option value="Some Experience">🌿 Some Experience — I've made small projects</option>
+              <option value="Intermediate">🌳 Intermediate — I'm comfortable with the tools</option>
+              <option value="Experienced">🏔 Experienced — I've shipped things before</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="hours">Hours Per Week Available <span class="required">*</span></label>
+            <select id="hours" name="hours_per_week" class="form-input form-select" required>
+              <option value="" disabled selected>How much time can you commit?</option>
+              <option value="1-5 hours">1–5 hours (casual, learning pace)</option>
+              <option value="5-10 hours">5–10 hours (steady contributor)</option>
+              <option value="10-20 hours">10–20 hours (dedicated team member)</option>
+              <option value="20+ hours">20+ hours (this is my main project)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Big questions -->
+        <div class="form-group form-group--full">
+          <label class="form-label" for="why">Why Do You Want to Join This Project? <span
+              class="required">*</span></label>
+          <textarea id="why" name="why_join" class="form-input form-textarea" rows="5"
+            placeholder="This is the most important question. There's no right answer — just be real."
+            required></textarea>
+          <div class="form-hint">We care about this more than anything else in this form.</div>
+        </div>
+
+        <div class="form-group form-group--full">
+          <label class="form-label" for="excites">What About Aethoria Excites You Most?</label>
+          <textarea id="excites" name="what_excites" class="form-input form-textarea" rows="4"
+            placeholder="The combat? The narrative? The world? The audio design? The UI philosophy? A specific character? Tell us what grabbed you."></textarea>
+        </div>
+
+        <div class="form-group form-group--full">
+          <label class="form-label" for="portfolio">Portfolio / Links</label>
+          <input type="text" id="portfolio" name="portfolio" class="form-input"
+            placeholder="Optional — GitHub, ArtStation, SoundCloud, anything you've made. Or leave blank.">
+          <div class="form-hint">Seriously optional. We know some of the best people haven't published anything yet.
+          </div>
+        </div>
+
+        <div class="form-group form-group--full">
+          <label class="form-label" for="anything">Anything Else?</label>
+          <textarea id="anything" name="anything_else" class="form-input form-textarea" rows="3"
+            placeholder="Something we should know? A question? A wild idea? This is your space."></textarea>
+        </div>
+
+        <div class="form-submit-area">
+          <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+            <span class="btn-text">Send Application</span>
+            <span class="btn-glow"></span>
+          </button>
+          <p class="form-note">We read every application personally. You'll hear from us within a week.</p>
+        </div>
+      </form>
+
+      <!-- Success message (shown after submit) -->
+      <div class="form-success" id="formSuccess" style="display:none;">
+        <div class="success-sigil">✦</div>
+        <h3>Your Application Has Been Sent</h3>
+        <p>The sigil recognized you. We'll read your application carefully and respond within a week. Welcome to the
+          beginning of something extraordinary.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-sigil">✦</span>
+          <span class="footer-title">Chronicles of Aethoria</span>
+          <p class="footer-tagline">The continent is not just a setting. Every ruin remembers.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">The Vision</a>
+          <a href="#roles">Roles</a>
+          <a href="#apply">Apply</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Chronicles of Aethoria. Built with passion, not a budget.</p>
+        <p style="font-size:10px; margin-top:8px; color: var(--text2); opacity: 0.4;">This site does not use cookies or track you.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js from CDN with Subresource Integrity -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+    integrity="sha512-dLRZkEVy0iEjMJIotIe3VPHfNPbMXGzaFKS0VEOqeUgJ5ia7/l6Bsxp2wnTJLcDPGOK0W9DVj36xElAw56e9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://romeo-victor.github.io/aethoria/sitemap.xml
